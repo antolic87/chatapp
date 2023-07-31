@@ -1,0 +1,16 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+
+  [build]
+  environment = { API_KEY = "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" }
+  API_KEY = "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"
+
+[build.settings]
+
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

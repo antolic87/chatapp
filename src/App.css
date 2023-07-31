@@ -1,0 +1,103 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.listaporuka {
+  border: #3b8183 3px solid;
+  border-radius: 10px;
+  padding: 20px 10px;
+  max-width: 900px;
+  width: 100%;
+  margin: 20px auto;
+  list-style: none;
+  flex-grow: 1;
+  overflow: auto;
+  background-color: white;
+}
+.Messages-message {
+  display: flex;
+  margin-top: 10px;
+}
+
+.Messages-message.currentMember {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.Message-content {
+  display: inline-block;
+  font-size: 40;
+}
+
+.currentMember .Message-content {
+  align-items: flex-end;
+}
+
+.Messages-message .usericon {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 20px 20px;
+}
+
+.Message-content .username {
+  display: block;
+  color: #000000;
+  text-decoration: underline #f5634a;
+  font-size: 13px;
+  padding-bottom: 6px;
+}
+
+.Message-content .text {
+  padding: 10px;
+  max-width: 450px;
+  margin: 0;
+  border-radius: 12px;
+  color: black;
+  display: inline-block;
+}
+
+.currentMember .Message-content .text {
+  background-color: #f5634a;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #3b8183;
+  margin: 15px 15px 0;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+
+input {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 3px solid #3b8183;
+  flex-grow: 1;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #3b8183;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-left: 10px;
+}
+
+.btn-footer {
+  background: #f5634a;
+}
+
